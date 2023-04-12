@@ -1,0 +1,22 @@
+<body>
+  <main class="container">
+    <h1 class="text-center">
+      <img style="width: 250px" src="assets/logo.png" alt="" />
+    </h1>
+    <img style="width: 50px"  src="assets/pok.png" alt="" *ngFor="let pokeball of pokemons">
+    <section class="row">
+     <section class="col-md-2 card mt-1" *ngFor="let pokemon of pokemons">
+       <a [routerLink]="['details',pokemon.id]">
+           <img class="header-img" style="width: 200px" [src]="pokemon.picture" alt="" />
+        <div class="card-body">
+          <h5 class="text-center">Nom : {{pokemon.name}} </h5>
+          <p class="text-center">Type : {{pokemon.types}}</p>
+          <p class="text-center">Vie :{{pokemon.hp}}</p>
+          <p class="text-center">Degat : {{pokemon.cp}}</p>
+          <p class="text-center">Capturer le : {{pokemon.created |date:"dd/MM/yyyy"}} </p><!--|date:"dd/MM/yyyy" permet de mettre la date sur une ligne day/month/years-->
+        </div></a>
+      </section>
+    
+    </section>
+  </main>
+</body>

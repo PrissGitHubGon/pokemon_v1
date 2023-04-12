@@ -1,0 +1,26 @@
+.container {
+
+    position:relative;
+    border-radius:25px;
+    background:transparent;
+    
+    
+    }
+    body{
+    
+      background-image: linear-gradient(to right top, #00f2d2, #56f6ff, #abf5ff, #e6f6ff, #ffffff);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .card:hover{
+      margin-top:-55px!important;
+      background-color: rgba(0, 245, 0, 0.411);
+    }
+    .card{
+      border-radius: 22px;
+      box-shadow: 30px 30px rgba(0, 0, 0, 0.363);;
+    }
+    a{
+      text-decoration: none;
+      color:black!important;
+    }
