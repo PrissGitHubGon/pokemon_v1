@@ -12,7 +12,7 @@
 
 - `git clone https://github.com/PrissGitHubGon/pokemon_v1.git`
 
-2. Install "Yarn" package
+2. Install "npm" package
 
 - `npm install`
 
